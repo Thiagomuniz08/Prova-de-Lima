@@ -1,257 +1,83 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url ('baground.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    color: rgb(0, 0, 0);
-    background-color: rgb(243, 240, 240);
-}
-nav {
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-}
+//HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velozes e Furiosos 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sinopse">Sinopse</a></li>
+                <li><a href="#trailer">Trailer</a></li>
+                <li><a href="#elenco">Elenco</a></li>
+                <li><a href="#curiosidade">Curiosidade</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="Sinopse">
+        <h1>Velozes e Furiosos 1</h1>
+        <p>O filme Velozes e Furiosos acompanha um grupo de corredores
+            de rua que vivem perigosamente, desafiando a lei e arriscando suas vidas
+            em corridas perigosas. Velocidade, ação e a adrenalina, lealdade , família e superação.
+        </p>
+    </section>
+    <section id="Trailer">
+        <h2>Trailer</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DXc8tiB8TBI?si=pybkf_v_LJvxKdhP"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+    <section id="Elenco">
+        <h2>Elenco</h2>
+        <b><i><p>Os principais Personagens</p></i></b>
+        <div class="card-container">
+            <img src="kisspng-brian-o-conner-vin-diesel-the-fast-and-the-furious-dwayne-johnson-5ac2cf6df04fa6.3247138015227165259843.jpg">
+            <h3>Vin Diesel -</h3>
+            <p>Dominic Torreto. Líder dos corredores.</p>
+        </div>
+        <br><br><br><br>
+        <div class="card-container">
+            <img src="png-clipart-paul-walker-the-fast-and-the-furious-brian-o-conner-actor-actor.png">
+            <h3>Paul Walker -</h3>
+            <p>Brian O Conner, um policial que se envolve com as corridas de ruas.</p>
+        </div>
+    </section>
+    <section id="Curiosidade">
+        <h2>Curiosidade</h2>
+        <ul>
+         <center><li>Os Velozes e Furiosos começou em 2001.</li></center>
+            <li>O Paul Walker foi o primeiro ator a ser contratado.</li>
+                <li>O filme se tornou uma franquias mais lucrativas da história dos cinema.</li>
+                <li>Velozes e Furiosos ja destruiu 1.500 carros durante produções, pois queria evitar que as pessoas
+                    replicassem as imagens de ação na vida real.
+                </li>
+        </ul>
+    </section>
+    <section id="Contato">
+        <h2>Deixe seu Comentário</h2>
+        <form>
+            <b><label for="nome">Nome:</label></b>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu Nome">
+            <b><label for="mensagem">Comentário</label></b>
+            <textarea id="mensagem" name="nome" placeholder="Deixe seu Comentário"></textarea>
+            <button type="submit">Enviar</button>
+            <footer>
+                <p>&2001 Velozes e Furiosos.</p>
+            </footer>
+        </form>
+    </section>
+    
+</body>
+</html>
 
-nav ul li{
-    display: inline;
-    margin: 0 15px;
-}
-nav ul li a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0,3s;
-}
-nav ul li a:hover {
-    color: yellow;
-}
-
-section {
-    padding: 40px;
-    text-align: center;
-}
-
-#sinopse h1 {
-    font-size: 40px;
-}
-
-#sinopse p {
-    font-size: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#trailer iframe {
-    margin: 20px 0;
-}
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.card {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px ;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-#curiosidade ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-#curiosidade ul li {
-    font-size: 18px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input, form textarea {
-    width: 300px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    background-color: yellow;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form button:hover {
-    background-color: orange;
-}
-
-footer {
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    color: rgb(255, 255, 255);
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url ('baground.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    color: rgb(0, 0, 0);
-    background-color: rgb(243, 240, 240);
-}
-nav {
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li{
-    display: inline;
-    margin: 0 15px;
-}
-nav ul li a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0,3s;
-}
-nav ul li a:hover {
-    color: yellow;
-}
-
-section {
-    padding: 40px;
-    text-align: center;
-}
-
-#sinopse h1 {
-    font-size: 40px;
-}
-
-#sinopse p {
-    font-size: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#trailer iframe {
-    margin: 20px 0;
-}
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.card {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px ;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-#curiosidade ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-#curiosidade ul li {
-    font-size: 18px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input, form textarea {
-    width: 300px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    background-color: yellow;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form button:hover {
-    background-color: orange;
-}
-
-footer {
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    color: rgb(255, 255, 255);
-}
+//CSS
 body {
     font-family: Arial, sans-serif;
     margin: 0;
